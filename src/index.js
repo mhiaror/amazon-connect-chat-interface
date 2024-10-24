@@ -28,6 +28,8 @@ import defaultTheme from './theme/defaultTheme';
     };
     connect.ChatSession.setGlobalConfig(config);
 
+    connect.ChatSession.setFeatureFlag("MESSAGE_RECEIPTS_ENABLED");
+
     // Guides in Chat
     setupGuidesRenderer(props);
 
